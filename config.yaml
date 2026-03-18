@@ -1,0 +1,25 @@
+scraping:
+  request_delay_sec: 1.0        # リクエスト間隔（秒）
+  timeout_sec: 15               # タイムアウト（秒）
+  max_retries: 3                # リトライ回数
+  workers: 3                    # 並列スレッド数
+  user_agent: "CompetitorAnalysisBot/1.0 (+https://github.com/yourname/competitor-analysis)"
+  respect_robots_txt: true
+
+analysis:
+  max_keywords: 30              # 抽出キーワード上位数
+  min_keyword_length: 2         # 最小キーワード文字数
+  cooccurrence_window: 5        # 共起ウィンドウサイズ
+  top_cooccurrence_pairs: 20    # 共起ペア上位数
+
+seo:
+  title_min_length: 20          # タイトル推奨最小文字数
+  title_max_length: 60          # タイトル推奨最大文字数
+  description_min_length: 70    # description推奨最小文字数
+  description_max_length: 160   # description推奨最大文字数
+
+output:
+  directory: "output"
+  filename_prefix: "competitor_analysis"
+  excel: true
+  csv: true

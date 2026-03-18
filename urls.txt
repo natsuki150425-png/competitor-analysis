@@ -1,0 +1,6 @@
+# 競合サイトURLリスト（1行1URL）
+# #から始まる行はコメントとして無視されます
+
+# 例：以下を実際の競合URLに変更してください
+https://www.python.org/
+https://docs.python.org/ja/3/tutorial/index.html
